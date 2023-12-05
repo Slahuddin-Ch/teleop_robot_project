@@ -1,0 +1,11 @@
+<launch>
+    <rosparam command="load" file="$(find motor_controller)/config/motor_params.yaml" />
+
+    <node name="motor_controller_left" pkg="motor_controller" type="motor_control.py" output="screen">
+        <param name="motor_side" value="left" />
+    </node>
+
+    <node name="motor_controller_right" pkg="motor_controller" type="motor_control.py" output="screen">
+        <param name="motor_side" value="right" />
+    </node>
+</launch>

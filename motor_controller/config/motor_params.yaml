@@ -1,0 +1,26 @@
+motor:
+  robot_width: 0.22
+  wheel_radius: 0.05
+  gear_ratio: 30
+  linear_limit: 0.16
+  angular_limit: 0.32
+  individual_control: False
+  pwm_control: False
+  pwm_max_freq: 255
+  max_rpm: 150
+  left:
+    inverted: True
+    ENAPIN: 0
+    ENBPIN: 0
+    IN1PIN: 37
+    IN2PIN: 40
+    IN3PIN: 37
+    IN4PIN: 40
+  right:
+    inverted: False
+    ENAPIN: 0
+    ENBPIN: 0
+    IN1PIN: 36
+    IN2PIN: 38
+    IN3PIN: 36
+    IN4PIN: 38
